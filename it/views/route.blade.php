@@ -57,7 +57,7 @@
 				{{ $route->getActionName() }}
 			</td>
 			<td width="15%">
-				{{ implode(' | ', $route->action['middleware'] ?? ["null"]) }}
+				{{ implode(' | ', $route->action['middleware']?? ["null"]) }}
 			</td>
 		</tr>
 		@endif
